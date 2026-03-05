@@ -17,7 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://35.182.51.105:4200")
+@CrossOrigin(origins = "${app.cors.allowedOrigins}")
 public class UserController {
 
     private final UserService userService;
